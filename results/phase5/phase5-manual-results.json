@@ -1,0 +1,36 @@
+{
+    "timestamp":  "2026-03-11T17:07:33.7053959+00:00",
+    "maintenance_tests":  {
+                              "k8s_redeploy":  {
+                                                   "time_sec":  62.5921886
+                                               },
+                              "k8s_scale":  {
+                                                "deployment":  "app",
+                                                "replicas":  3,
+                                                "time_sec":  8.0065709
+                                            },
+                              "docker_redeploy":  {
+                                                      "time_sec":  38.9274199
+                                                  },
+                              "docker_scale":  {
+                                                   "replicas":  3,
+                                                   "service":  "notification",
+                                                   "time_sec":  7.0144172
+                                               }
+                          },
+    "failure_tests":  {
+                          "k8s_kill_redis":  {
+                                                 "auto_recovered":  true
+                                             },
+                          "k8s_kill_app":  {
+                                               "auto_restarted":  true
+                                           },
+                          "docker_kill_redis":  {
+                                                    "app_failed":  false,
+                                                    "auto_recovered":  true
+                                                },
+                          "docker_kill_app":  {
+                                                  "auto_restarted":  false
+                                              }
+                      }
+}

@@ -1,0 +1,39 @@
+{
+    "resources":  [
+
+                  ],
+    "timestamp":  "2026-03-11T16:45:22.9826920+00:00",
+    "complexity":  {
+                       "manifest_lines":  274,
+                       "dockerfile_lines":  34,
+                       "cli_tools_count":  2,
+                       "cli_tools_required":  [
+                                                  "docker",
+                                                  "kubectl"
+                                              ],
+                       "config_total_lines":  321,
+                       "config_files_count":  2,
+                       "concepts_required":  [
+                                                 "Namespace",
+                                                 "Secret",
+                                                 "Deployment",
+                                                 "Service",
+                                                 "NodePort",
+                                                 "readinessProbe"
+                                             ]
+                   },
+    "deployment":  {
+                       "failure_reason":  "none",
+                       "build_time_ms":  69216,
+                       "apply_and_ready_time_ms":  59750,
+                       "success":  true,
+                       "total_time_ms":  128968,
+                       "health_ready_time_ms":  161
+                   },
+    "orchestrator":  "kubernetes",
+    "pods":  {
+                 "total":  5,
+                 "running":  5
+             },
+    "run_id":  "20260311_164253"
+}

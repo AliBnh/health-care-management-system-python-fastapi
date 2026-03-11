@@ -1,0 +1,91 @@
+{
+    "resources":  [
+                      {
+                          "BlockIO":  "0B / 13.4MB",
+                          "CPUPerc":  "40.10%",
+                          "Container":  "2010e4eebe31",
+                          "ID":  "2010e4eebe31",
+                          "MemPerc":  "17.53%",
+                          "MemUsage":  "89.75MiB / 512MiB",
+                          "Name":  "health-care-management-system-python-fastapi-app-1",
+                          "NetIO":  "8.18kB / 10.4kB",
+                          "PIDs":  "3"
+                      },
+                      {
+                          "BlockIO":  "0B / 0B",
+                          "CPUPerc":  "25.05%",
+                          "Container":  "1b87b97f21ee",
+                          "ID":  "1b87b97f21ee",
+                          "MemPerc":  "7.31%",
+                          "MemUsage":  "18.7MiB / 256MiB",
+                          "Name":  "health-care-management-system-python-fastapi-notification-1",
+                          "NetIO":  "872B / 126B",
+                          "PIDs":  "1"
+                      },
+                      {
+                          "BlockIO":  "0B / 53MB",
+                          "CPUPerc":  "0.02%",
+                          "Container":  "ef4cb8b15dff",
+                          "ID":  "ef4cb8b15dff",
+                          "MemPerc":  "6.51%",
+                          "MemUsage":  "33.35MiB / 512MiB",
+                          "Name":  "health-care-management-system-python-fastapi-db-1",
+                          "NetIO":  "12.2kB / 5.2kB",
+                          "PIDs":  "7"
+                      },
+                      {
+                          "BlockIO":  "209kB / 8.19kB",
+                          "CPUPerc":  "25.06%",
+                          "Container":  "24eb762bda17",
+                          "ID":  "24eb762bda17",
+                          "MemPerc":  "29.24%",
+                          "MemUsage":  "74.85MiB / 256MiB",
+                          "Name":  "health-care-management-system-python-fastapi-rabbitmq-1",
+                          "NetIO":  "3.64kB / 702B",
+                          "PIDs":  "47"
+                      },
+                      {
+                          "BlockIO":  "0B / 0B",
+                          "CPUPerc":  "0.51%",
+                          "Container":  "2656492bd501",
+                          "ID":  "2656492bd501",
+                          "MemPerc":  "1.29%",
+                          "MemUsage":  "3.309MiB / 256MiB",
+                          "Name":  "health-care-management-system-python-fastapi-redis-1",
+                          "NetIO":  "3.08kB / 126B",
+                          "PIDs":  "6"
+                      }
+                  ],
+    "timestamp":  "2026-03-11T16:19:54.6744680+00:00",
+    "complexity":  {
+                       "compose_file_lines":  124,
+                       "dockerfile_lines":  34,
+                       "cli_tools_count":  2,
+                       "cli_tools_required":  [
+                                                  "docker",
+                                                  "docker compose"
+                                              ],
+                       "config_total_lines":  171,
+                       "config_files_count":  3,
+                       "concepts_required":  [
+                                                 "services",
+                                                 "volumes",
+                                                 "depends_on",
+                                                 "healthcheck"
+                                             ]
+                   },
+    "deployment":  {
+                       "failure_reason":  "none",
+                       "build_time_ms":  59191,
+                       "success":  true,
+                       "total_time_ms":  85321,
+                       "health_ready_time_ms":  12351,
+                       "start_time_ms":  13774
+                   },
+    "orchestrator":  "docker-compose",
+    "containers":  {
+                       "total":  5,
+                       "running":  5
+                   },
+    "run_id":  "20260311_161809"
+}
