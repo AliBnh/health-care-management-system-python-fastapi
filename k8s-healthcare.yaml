@@ -11,7 +11,7 @@ metadata:
 type: Opaque
 stringData:
   DB_PASSWORD: "healthcare_pass"
-  SECRET_KEY: "super-secret-change-me-123456789"
+  SECRET_KEY: "benchmark-jwt-secret-key"
 ---
 apiVersion: v1
 kind: Secret
@@ -40,9 +40,9 @@ type: Opaque
 stringData:
   SMTP_SERVER: "smtp.example.com"
   SMTP_PORT: "587"
-  SMTP_USERNAME: "user"
-  SMTP_PASSWORD: "password"
-  EMAIL_FROM: "noreply@example.com"
+  SMTP_USERNAME: "dummy@example.com"
+  SMTP_PASSWORD: "dummypassword"
+  EMAIL_FROM: "noreply@healthcare-benchmark.local"
 ---
 apiVersion: v1
 kind: Service
@@ -88,8 +88,7 @@ spec:
                   key: DB_PASSWORD
           readinessProbe:
             exec:
-              command:
-                ["sh", "-c", "pg_isready -U healthcare_user -d healthcare_db"]
+              command: ["sh","-c","pg_isready -U healthcare_user -d healthcare_db"]
             initialDelaySeconds: 10
             periodSeconds: 10
 ---
